@@ -6,7 +6,7 @@ import seaborn as sns
 
 
 data= pd.read_csv(r'diabetes.csv')
-# print(data.head(5))
+print(data.head(5))
 # Data cleaning process
 # print(data.isnull().sum())
 data= data.drop_duplicates()
@@ -76,12 +76,12 @@ if choose=="":
     plt.xlabel("Glucose")
     plt.ylabel("frequency")
     plt.show()
-    plt.hist(data['BMI'], bins=30, color='pink')
+    plt.hist(data['BMI'], bins=30, color='Blue')
     plt.title("Graph 2")
     plt.xlabel("BMI")
     plt.ylabel("frequency")
     plt.show()  
-    plt.hist(data['Age'], bins=30, color='blue')
+    plt.hist(data['Age'], bins=31, color='Red')
     plt.title("Graph 3")
     plt.xlabel("Age")
     plt.ylabel("frequency")
